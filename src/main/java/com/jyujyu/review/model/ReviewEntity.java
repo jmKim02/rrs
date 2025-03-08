@@ -8,19 +8,18 @@ import lombok.NoArgsConstructor;
 
 import java.time.ZonedDateTime;
 
-@Builder
 @Getter
-@AllArgsConstructor
+@Builder
 @NoArgsConstructor
-@Table(name = "menu")
+@AllArgsConstructor
+@Table(name = "review")
 @Entity
-public class MenuEntity {
+public class ReviewEntity {
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     private Long restaurantId;
-    private String name;
-    private Integer price;
+    private String content;
+    private Double score;
     private ZonedDateTime createdAt;
-    private ZonedDateTime updatedAt;
 }
