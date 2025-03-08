@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0aa77547-e67e-4911-abc6-7531eb939428" name="Changes" comment="first commit">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jyujyu/review/api/RestaurantApi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jyujyu/review/api/request/CreateAndEditRestaurantRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jyujyu/review/api/request/CreateAndEditRestaurantRequestMenu.java" afterDir="false" />
+    <list default="true" id="0aa77547-e67e-4911-abc6-7531eb939428" name="Changes" comment="맛집 관리 API 스펙 추가">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jyujyu/review/model/MenuEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jyujyu/review/model/RestaurantEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jyujyu/review/repository/MenuRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jyujyu/review/repository/RestaurantRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jyujyu/review/service/RestaurantService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.12.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.12.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.12.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.12.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.12.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.12.1/fileHashes/fileHashes.bin" afterDir="false" />
@@ -15,14 +17,8 @@
       <change beforePath="$PROJECT_DIR$/.gradle/8.12.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.12.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/TestEntityApi$CreateTestEntityRequest.class.uniqueId3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/TestEntityApi.class.uniqueId1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/TestQueryApi.class.uniqueId0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/TestRepository.class.uniqueId2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/TestRepositoryCustom.class.uniqueId5" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/TestRepositoryImpl.class.uniqueId6" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/TestService.class.uniqueId4" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jyujyu/review/api/RestaurantApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jyujyu/review/api/RestaurantApi.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,8 +53,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -208,7 +204,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1710031474020</updated>
-      <workItem from="1741399483654" duration="6231000" />
+      <workItem from="1741399483654" duration="8164000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -298,7 +294,15 @@
       <option name="project" value="LOCAL" />
       <updated>1741404435513</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="맛집 관리 API 스펙 추가">
+      <option name="closed" value="true" />
+      <created>1741405905359</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1741405905359</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -308,14 +312,14 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="맛집 관리 API 스펙 추가" />
     <MESSAGE value="맛집 생성/수정/삭제 API 완성" />
     <MESSAGE value="맛집 가져오기 API 추가" />
     <MESSAGE value="리뷰 등록/삭제 API 추가" />
     <MESSAGE value="맛집에 등록된 리뷰 가져오기 API 추가" />
     <MESSAGE value="Dockerfile 추가" />
     <MESSAGE value="first commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="first commit" />
+    <MESSAGE value="맛집 관리 API 스펙 추가" />
+    <option name="LAST_COMMIT_MESSAGE" value="맛집 관리 API 스펙 추가" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
